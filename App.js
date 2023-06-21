@@ -10,6 +10,7 @@ import { Logs } from 'expo'
 import { Button } from '@rneui/themed'
 import { NavigationContainer } from '@react-navigation/native';
 import StartScreen from './Screens/StartScreen';
+import NewQuestionScreen from './Screens/NewQuestionScreen';
 
 const Stack = createNativeStackNavigator();
 
@@ -31,13 +32,19 @@ export const screenHeight = (x) => StyleSheet.create({
 export default function App() {
   return (
     <NavigationContainer>
-      <Stack.Navigator screenOptions={{
+      <Stack.Navigator initialRouteName='NewQuestion' screenOptions={{
     headerShown: false
   }}>
         <Stack.Screen
           name="Start"
           component={StartScreen}
         ></Stack.Screen>
+        <Stack.Screen
+          name="NewQuestion"
+          component={NewQuestionScreen}>
+          
+
+        </Stack.Screen>
 
       </Stack.Navigator>
 

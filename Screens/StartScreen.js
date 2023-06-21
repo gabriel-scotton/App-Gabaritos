@@ -4,10 +4,11 @@ import { styles } from '../Styles';
 import * as React  from 'react'
 import { Button } from '@rneui/themed'
 const arraytest = [1,2,3,4,5,6]
+
 export default function StartScreen()  {
   
   return (
-      <View style={[styles.background_purple]}>
+      <View style={[styles.ScreenBackground]}>
         <View style={[styles.color_white, { flex: 1 }]}>
             
     
@@ -49,7 +50,7 @@ export default function StartScreen()  {
               type="solid"
               buttonStyle={[{ flex: 4 }, styles.buttonLarge,
               styles.backgroundcolors_blue,
-              styles.buttonLargeOnPurpleBackground]}
+              styles.roundBorderLargeOnPurpleBackground]}
             />
             <View style={{ flex: 4 }}></View >
                 
@@ -63,7 +64,7 @@ export default function StartScreen()  {
               type="solid"
               buttonStyle={[{ flex: 4 }, styles.buttonLarge,
               styles.backgroundcolors_blue,
-              styles.buttonLargeOnPurpleBackground]}
+              styles.roundBorderLargeOnPurpleBackground]}
             />
             <View style={{ flex: 4 }}></View >
           </View>
